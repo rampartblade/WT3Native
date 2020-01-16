@@ -36,11 +36,11 @@ class Home extends React.Component {
                 coinCurrentPrice: item.current_price,
                 coinHigh: item.high_24h,
                 coinLow: item.low_24h,
-                coinPrice: item.price_change_percentage_24h,
+                coinPrice: item.price_change_24h,
                 coinImage: item.image
             })}
             title={item.name}
-            leftAvatar = {{ source: { uri:  /*'https://ui-avatars.com/api/?name=' + item.name*/ item.image } } }
+            leftAvatar = {{ source: { uri: item.image /*'https://ui-avatars.com/api/?name=' + item.name*/} } }
             bottomDivider
             chevron
         />
